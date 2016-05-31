@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A216AA01CFBAE81002DFA95 /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A216A9F1CFBAE81002DFA95 /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A216AA41CFBAE81002DFA95 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A216A9D1CFBAE81002DFA95 /* Networking.framework */; };
+		2A216AA51CFBAE81002DFA95 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A216A9D1CFBAE81002DFA95 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A91278C1CEFB54C008CA0FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91278B1CEFB54C008CA0FE /* AppDelegate.swift */; };
 		2A91278E1CEFB54C008CA0FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91278D1CEFB54C008CA0FE /* ViewController.swift */; };
 		2A9127911CEFB54C008CA0FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A91278F1CEFB54C008CA0FE /* Main.storyboard */; };
@@ -15,7 +18,37 @@
 		2A91279E1CEFB5CE008CA0FE /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91279D1CEFB5CE008CA0FE /* Host.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2A216AA21CFBAE81002DFA95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A9127801CEFB54C008CA0FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A216A9C1CFBAE81002DFA95;
+			remoteInfo = Networking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A216AA91CFBAE81002DFA95 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2A216AA51CFBAE81002DFA95 /* Networking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2A216A9D1CFBAE81002DFA95 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A216A9F1CFBAE81002DFA95 /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
+		2A216AA11CFBAE81002DFA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A216AAA1CFBAF04002DFA95 /* Networking.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Networking.xcconfig; sourceTree = SOURCE_ROOT; };
+		2A216AAB1CFBAF9B002DFA95 /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
+		2A216AAC1CFBC329002DFA95 /* simulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = simulator.modulemap; sourceTree = "<group>"; };
 		2A9127881CEFB54C008CA0FE /* Host.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Host.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A91278B1CEFB54C008CA0FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A91278D1CEFB54C008CA0FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,21 +60,42 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A9127851CEFB54C008CA0FE /* Frameworks */ = {
+		2A216A991CFBAE81002DFA95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A9127851CEFB54C008CA0FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A216AA41CFBAE81002DFA95 /* Networking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A216A9E1CFBAE81002DFA95 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2A216A9F1CFBAE81002DFA95 /* Networking.h */,
+				2A216AA11CFBAE81002DFA95 /* Info.plist */,
+				2A216AAB1CFBAF9B002DFA95 /* iphoneos.modulemap */,
+				2A216AAC1CFBC329002DFA95 /* simulator.modulemap */,
+				2A216AAA1CFBAF04002DFA95 /* Networking.xcconfig */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		2A91277F1CEFB54C008CA0FE = {
 			isa = PBXGroup;
 			children = (
 				2A91279D1CEFB5CE008CA0FE /* Host.swift */,
 				2A91278A1CEFB54C008CA0FE /* Example */,
+				2A216A9E1CFBAE81002DFA95 /* Networking */,
 				2A9127891CEFB54C008CA0FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				2A9127881CEFB54C008CA0FE /* Host.app */,
+				2A216A9D1CFBAE81002DFA95 /* Networking.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,7 +125,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2A216A9A1CFBAE81002DFA95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A216AA01CFBAE81002DFA95 /* Networking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		2A216A9C1CFBAE81002DFA95 /* Networking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A216AA61CFBAE81002DFA95 /* Build configuration list for PBXNativeTarget "Networking" */;
+			buildPhases = (
+				2A216A981CFBAE81002DFA95 /* Sources */,
+				2A216A991CFBAE81002DFA95 /* Frameworks */,
+				2A216A9A1CFBAE81002DFA95 /* Headers */,
+				2A216A9B1CFBAE81002DFA95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Networking;
+			productName = Networking;
+			productReference = 2A216A9D1CFBAE81002DFA95 /* Networking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		2A9127871CEFB54C008CA0FE /* Host */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A91279A1CEFB54C008CA0FE /* Build configuration list for PBXNativeTarget "Host" */;
@@ -78,10 +162,12 @@
 				2A9127841CEFB54C008CA0FE /* Sources */,
 				2A9127851CEFB54C008CA0FE /* Frameworks */,
 				2A9127861CEFB54C008CA0FE /* Resources */,
+				2A216AA91CFBAE81002DFA95 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2A216AA31CFBAE81002DFA95 /* PBXTargetDependency */,
 			);
 			name = Host;
 			productName = Host;
@@ -98,6 +184,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Richard Stelling";
 				TargetAttributes = {
+					2A216A9C1CFBAE81002DFA95 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					2A9127871CEFB54C008CA0FE = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -117,11 +206,19 @@
 			projectRoot = "";
 			targets = (
 				2A9127871CEFB54C008CA0FE /* Host */,
+				2A216A9C1CFBAE81002DFA95 /* Networking */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2A216A9B1CFBAE81002DFA95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2A9127861CEFB54C008CA0FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,6 +232,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2A216A981CFBAE81002DFA95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2A9127841CEFB54C008CA0FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +250,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A216AA31CFBAE81002DFA95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A216A9C1CFBAE81002DFA95 /* Networking */;
+			targetProxy = 2A216AA21CFBAE81002DFA95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2A91278F1CEFB54C008CA0FE /* Main.storyboard */ = {
@@ -167,6 +279,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2A216AA71CFBAE81002DFA95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A216AAA1CFBAF04002DFA95 /* Networking.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Networking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.Networking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2A216AA81CFBAE81002DFA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A216AAA1CFBAF04002DFA95 /* Networking.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Networking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.Networking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2A9127981CEFB54C008CA0FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -256,10 +408,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Host/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.Host;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -267,16 +423,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Host/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.Host;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2A216AA61CFBAE81002DFA95 /* Build configuration list for PBXNativeTarget "Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A216AA71CFBAE81002DFA95 /* Debug */,
+				2A216AA81CFBAE81002DFA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2A9127831CEFB54C008CA0FE /* Build configuration list for PBXProject "Host" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -293,6 +460,7 @@
 				2A91279C1CEFB54C008CA0FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
