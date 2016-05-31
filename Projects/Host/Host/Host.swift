@@ -27,6 +27,9 @@
 
 import Foundation
 
+// TODO:    - IPv6 Support
+//          - WAN Address
+
 @available(iOS 9.3, OSX 10.11, *)
 final public class Host {
     

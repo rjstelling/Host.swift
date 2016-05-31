@@ -98,9 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				2AE806A71CFDE62700FDDB2F /* Host.xcconfig */,
-				2AE806BA1CFDF26700FDDB2F /* custom-mac.modulemap */,
 				2AE806BB1CFDF26700FDDB2F /* custom-phoneos.modulemap */,
 				2AE806BC1CFDF26700FDDB2F /* custom-simulator.modulemap */,
+				2AE806BA1CFDF26700FDDB2F /* custom-mac.modulemap */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
