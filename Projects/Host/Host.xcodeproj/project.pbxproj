@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AE806711CFDDE3200FDDB2F /* Host.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE806661CFDDE3200FDDB2F /* Host.framework */; };
+		2AE806761CFDDE3200FDDB2F /* HostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE806751CFDDE3200FDDB2F /* HostTests.swift */; };
+		2AE806811CFDDE6D00FDDB2F /* Host.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AE806801CFDDE6D00FDDB2F /* Host.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AE806831CFDDE7D00FDDB2F /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE806821CFDDE7D00FDDB2F /* Host.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AE806721CFDDE3200FDDB2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AE8065D1CFDDE3200FDDB2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AE806651CFDDE3200FDDB2F;
+			remoteInfo = Host;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AE806661CFDDE3200FDDB2F /* Host.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Host.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE8066B1CFDDE3200FDDB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE806701CFDDE3200FDDB2F /* HostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE806751CFDDE3200FDDB2F /* HostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostTests.swift; sourceTree = "<group>"; };
+		2AE806771CFDDE3200FDDB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE806801CFDDE6D00FDDB2F /* Host.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Host.h; sourceTree = "<group>"; };
+		2AE806821CFDDE7D00FDDB2F /* Host.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		2AE806A71CFDE62700FDDB2F /* Host.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Host.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AE806621CFDDE3200FDDB2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE8066D1CFDDE3200FDDB2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE806711CFDDE3200FDDB2F /* Host.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AE8065C1CFDDE3200FDDB2F = {
+			isa = PBXGroup;
+			children = (
+				2AE806681CFDDE3200FDDB2F /* Host */,
+				2AE806741CFDDE3200FDDB2F /* HostTests */,
+				2AE806841CFDE04200FDDB2F /* Supporting Files */,
+				2AE806671CFDDE3200FDDB2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AE806671CFDDE3200FDDB2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AE806661CFDDE3200FDDB2F /* Host.framework */,
+				2AE806701CFDDE3200FDDB2F /* HostTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AE806681CFDDE3200FDDB2F /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				2AE806801CFDDE6D00FDDB2F /* Host.h */,
+				2AE806821CFDDE7D00FDDB2F /* Host.swift */,
+				2AE8066B1CFDDE3200FDDB2F /* Info.plist */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		2AE806741CFDDE3200FDDB2F /* HostTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE806751CFDDE3200FDDB2F /* HostTests.swift */,
+				2AE806771CFDDE3200FDDB2F /* Info.plist */,
+			);
+			path = HostTests;
+			sourceTree = "<group>";
+		};
+		2AE806841CFDE04200FDDB2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AE806A71CFDE62700FDDB2F /* Host.xcconfig */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2AE806631CFDDE3200FDDB2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE806811CFDDE6D00FDDB2F /* Host.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2AE806651CFDDE3200FDDB2F /* Host */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE8067A1CFDDE3200FDDB2F /* Build configuration list for PBXNativeTarget "Host" */;
+			buildPhases = (
+				2AE806611CFDDE3200FDDB2F /* Sources */,
+				2AE806621CFDDE3200FDDB2F /* Frameworks */,
+				2AE806631CFDDE3200FDDB2F /* Headers */,
+				2AE806641CFDDE3200FDDB2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Host;
+			productName = Host;
+			productReference = 2AE806661CFDDE3200FDDB2F /* Host.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2AE8066F1CFDDE3200FDDB2F /* HostTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE8067D1CFDDE3200FDDB2F /* Build configuration list for PBXNativeTarget "HostTests" */;
+			buildPhases = (
+				2AE8066C1CFDDE3200FDDB2F /* Sources */,
+				2AE8066D1CFDDE3200FDDB2F /* Frameworks */,
+				2AE8066E1CFDDE3200FDDB2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE806731CFDDE3200FDDB2F /* PBXTargetDependency */,
+			);
+			name = HostTests;
+			productName = HostTests;
+			productReference = 2AE806701CFDDE3200FDDB2F /* HostTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AE8065D1CFDDE3200FDDB2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Richard Stelling";
+				TargetAttributes = {
+					2AE806651CFDDE3200FDDB2F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					2AE8066F1CFDDE3200FDDB2F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2AE806601CFDDE3200FDDB2F /* Build configuration list for PBXProject "Host" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2AE8065C1CFDDE3200FDDB2F;
+			productRefGroup = 2AE806671CFDDE3200FDDB2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AE806651CFDDE3200FDDB2F /* Host */,
+				2AE8066F1CFDDE3200FDDB2F /* HostTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AE806641CFDDE3200FDDB2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE8066E1CFDDE3200FDDB2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AE806611CFDDE3200FDDB2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE806831CFDDE7D00FDDB2F /* Host.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE8066C1CFDDE3200FDDB2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE806761CFDDE3200FDDB2F /* HostTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AE806731CFDDE3200FDDB2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AE806651CFDDE3200FDDB2F /* Host */;
+			targetProxy = 2AE806721CFDDE3200FDDB2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AE806781CFDDE3200FDDB2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2AE806791CFDDE3200FDDB2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2AE8067B1CFDDE3200FDDB2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Host.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Host\"";
+				INFOPLIST_FILE = Host/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.Host;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AE8067C1CFDDE3200FDDB2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Host.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Host\"";
+				INFOPLIST_FILE = Host/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.Host;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+			};
+			name = Release;
+		};
+		2AE8067E1CFDDE3200FDDB2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HostTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.HostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2AE8067F1CFDDE3200FDDB2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HostTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.HostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AE806601CFDDE3200FDDB2F /* Build configuration list for PBXProject "Host" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE806781CFDDE3200FDDB2F /* Debug */,
+				2AE806791CFDDE3200FDDB2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE8067A1CFDDE3200FDDB2F /* Build configuration list for PBXNativeTarget "Host" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE8067B1CFDDE3200FDDB2F /* Debug */,
+				2AE8067C1CFDDE3200FDDB2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE8067D1CFDDE3200FDDB2F /* Build configuration list for PBXNativeTarget "HostTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE8067E1CFDDE3200FDDB2F /* Debug */,
+				2AE8067F1CFDDE3200FDDB2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AE8065D1CFDDE3200FDDB2F /* Project object */;
+}

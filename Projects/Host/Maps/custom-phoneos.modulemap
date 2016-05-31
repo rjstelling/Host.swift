@@ -1,0 +1,12 @@
+// DO NOT EDIT - This is a custon .modulemap file to support importing C Networking API
+
+framework module Host {
+    umbrella header "Host.h"
+    
+    export *
+    module * { export * }
+}
+
+module Host.Networking {
+    header "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/ifaddrs.h"
+}

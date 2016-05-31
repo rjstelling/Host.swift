@@ -1,12 +1,13 @@
 //
 //  ViewController.swift
-//  Host
+//  iOS Example
 //
-//  Created by Richard Stelling on 20/05/2016.
+//  Created by Richard Stelling on 31/05/2016.
 //  Copyright © 2016 Richard Stelling. All rights reserved.
 //
 
 import UIKit
+import Host
 
 class ViewController: UIViewController {
 
@@ -17,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         hostname.text = host.name
         addresses.text = host.addresses.reduce("") {
             return "\($0!)\($1)\n"
@@ -28,4 +29,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+
 }
+

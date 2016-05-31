@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Host
+//  iOS Example
 //
-//  Created by Richard Stelling on 20/05/2016.
+//  Created by Richard Stelling on 31/05/2016.
 //  Copyright © 2016 Richard Stelling. All rights reserved.
 //
 

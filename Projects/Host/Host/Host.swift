@@ -26,7 +26,6 @@
 //  SOFTWARE.
 
 import Foundation
-import Networking
 
 @available(iOS 9.3, OSX 10.11, *)
 final public class Host {
@@ -39,6 +38,10 @@ final public class Host {
     /// Unordered list of IPv4 addresses
     public var addresses: [String] {
         return getAddresses()
+    }
+    
+    public init() {
+        
     }
     
     private func getHostname() -> String? {
