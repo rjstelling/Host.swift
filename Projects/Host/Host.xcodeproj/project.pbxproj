@@ -32,6 +32,9 @@
 		2AE806801CFDDE6D00FDDB2F /* Host.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Host.h; sourceTree = "<group>"; };
 		2AE806821CFDDE7D00FDDB2F /* Host.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
 		2AE806A71CFDE62700FDDB2F /* Host.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Host.xcconfig; sourceTree = "<group>"; };
+		2AE806BA1CFDF26700FDDB2F /* custom-mac.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-mac.modulemap"; path = "Maps/custom-mac.modulemap"; sourceTree = "<group>"; };
+		2AE806BB1CFDF26700FDDB2F /* custom-phoneos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-phoneos.modulemap"; path = "Maps/custom-phoneos.modulemap"; sourceTree = "<group>"; };
+		2AE806BC1CFDF26700FDDB2F /* custom-simulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-simulator.modulemap"; path = "Maps/custom-simulator.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				2AE806A71CFDE62700FDDB2F /* Host.xcconfig */,
+				2AE806BA1CFDF26700FDDB2F /* custom-mac.modulemap */,
+				2AE806BB1CFDF26700FDDB2F /* custom-phoneos.modulemap */,
+				2AE806BC1CFDF26700FDDB2F /* custom-simulator.modulemap */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
