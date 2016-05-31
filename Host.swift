@@ -27,6 +27,7 @@
 
 import Foundation
 
+@available(iOS 9.3, OSX 10.11, *)
 final public class Host {
     
     /// Host name if available
