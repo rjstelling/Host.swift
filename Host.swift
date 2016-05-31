@@ -26,6 +26,7 @@
 //  SOFTWARE.
 
 import Foundation
+import Networking
 
 @available(iOS 9.3, OSX 10.11, *)
 final public class Host {
@@ -54,39 +55,32 @@ final public class Host {
     private func getAddresses() -> [String] {
         
         var addresses: [String] = []
+        var interfaces = UnsafeMutablePointer<ifaddrs>(nil)
         
-        guard let hostname = self.name else {
+        // Use `getifaddrs()` to fill the ifaddrs struct, this is a linked list
+        guard getifaddrs(&interfaces) == 0 else {
             return []
         }
         
-        let host = CFHostCreateWithName(kCFAllocatorDefault, hostname).takeUnretainedValue()
+        // Our first address was returned above
+        var currentInterface: ifaddrs! = interfaces.memory
         
-        // Resolve all addresses
-        guard CFHostStartInfoResolution(host, .Addresses, nil) else {
-            return []
-        }
-        
-        var resolved: DarwinBoolean = false
-        if let sockaddrs = CFHostGetAddressing(host, &resolved)?.takeRetainedValue() {
+        repeat {
             
-            let count = CFArrayGetCount(sockaddrs)
+            let addressInfo = unsafeBitCast(currentInterface.ifa_addr.memory, sockaddr_in.self)
             
-            for i in 0..<count {
-                
-                let data = unsafeBitCast(CFArrayGetValueAtIndex(sockaddrs, i), NSData.self)
-                
-                var storage = sockaddr_storage()
-                data.getBytes(&storage, length: sizeof(sockaddr_storage))
-                
-                if Int32(storage.ss_family) == AF_INET {
-                    let addrIP4 = withUnsafePointer(&storage) { UnsafePointer<sockaddr_in>($0).memory }
-                    
-                    if let address = String(CString: inet_ntoa(addrIP4.sin_addr), encoding: NSUTF8StringEncoding) {
-                        addresses.append(address)
-                    }
-                }
+            if let ipAddress = String(CString: inet_ntoa(addressInfo.sin_addr), encoding: NSUTF8StringEncoding) where Int(addressInfo.sin_family) == Int(AF_INET) {
+                addresses.append(ipAddress)
             }
-        }
+            
+            if currentInterface.ifa_next != nil {
+                currentInterface = currentInterface.ifa_next.memory
+            }
+            else {
+                currentInterface = nil
+            }
+            
+        } while currentInterface != nil
         
         return addresses
     }
