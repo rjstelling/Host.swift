@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2AE8068F1CFDE34F00FDDB2F /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE8068F1CFDE34F00FDDB2F /* Host Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Host Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806921CFDE34F00FDDB2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AE806941CFDE34F00FDDB2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2AE806991CFDE34F00FDDB2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		2AE806901CFDE34F00FDDB2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AE8068F1CFDE34F00FDDB2F /* iOS Example.app */,
+				2AE8068F1CFDE34F00FDDB2F /* Host Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +81,7 @@
 			);
 			name = "iOS Example";
 			productName = "iOS Example";
-			productReference = 2AE8068F1CFDE34F00FDDB2F /* iOS Example.app */;
+			productReference = 2AE8068F1CFDE34F00FDDB2F /* Host Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -246,7 +246,7 @@
 				INFOPLIST_FILE = "iOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.empiricalmagic.iOS-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Host Example";
 			};
 			name = Debug;
 		};
@@ -257,7 +257,7 @@
 				INFOPLIST_FILE = "iOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.empiricalmagic.iOS-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Host Example";
 			};
 			name = Release;
 		};
