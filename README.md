@@ -1,7 +1,9 @@
 # Host.swift
 
+[![Swift](https://img.shields.io/badge/Swift-2.2-orange.svg?style=flat)](#)
+[![Platform](https://img.shields.io/badge/Platform-iOS, macOS & tvOS-lightgrey.svg?style=flat)](#)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/rjstelling/Host.swift/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/rjstelling/Host.swift/blob/master/LICENSE)
 
 A Swift implementation of NSHost that works on iOS, OS X and tvOS. 
 
