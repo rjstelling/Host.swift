@@ -30,6 +30,14 @@ import Foundation
 // TODO:    - IPv6 Support
 //          - WAN Address
 
+#if !swift(>=3.0)
+extension String {
+    public init?(cString: UnsafePointer<CChar>, encoding enc: NSStringEncoding) {
+        self.init(CString: cString, encoding: enc)
+    }
+}
+#endif
+
 @available(iOS 9.3, OSX 10.11, *)
 final public class Host {
     
@@ -49,13 +57,17 @@ final public class Host {
     
     private func getHostname() -> String? {
         
+    #if swift(>=3.0)
+        var hostname = [CChar](repeating: 0x0 ,count: Int(NI_MAXHOST))
+    #else
         var hostname = [CChar](count: Int(NI_MAXHOST), repeatedValue: 0x0)
+    #endif
         
         guard gethostname(&hostname, Int(NI_MAXHOST)) == noErr else {
             return nil
         }
-        
-        return String(CString: hostname, encoding: NSUTF8StringEncoding)
+
+        return String(cString: hostname, encoding: NSUTF8StringEncoding)
     }
     
     private func getAddresses() -> [String] {
@@ -69,18 +81,30 @@ final public class Host {
         }
         
         // Our first address was returned above
-        var currentInterface: ifaddrs! = interfaces.memory
+        #if swift(>=3.0)
+            var currentInterface: ifaddrs! = interfaces?.pointee
+        #else
+            var currentInterface: ifaddrs! = interfaces.memory
+        #endif
         
         repeat {
             
+        #if swift(>=3.0)
+            let addressInfo = unsafeBitCast(currentInterface.ifa_addr.pointee, to: sockaddr_in.self)
+        #else
             let addressInfo = unsafeBitCast(currentInterface.ifa_addr.memory, sockaddr_in.self)
+        #endif
             
-            if let ipAddress = String(CString: inet_ntoa(addressInfo.sin_addr), encoding: NSUTF8StringEncoding) where Int(addressInfo.sin_family) == Int(AF_INET) {
+            if let ipAddress = String(cString: inet_ntoa(addressInfo.sin_addr), encoding: NSUTF8StringEncoding) where Int(addressInfo.sin_family) == Int(AF_INET) {
                 addresses.append(ipAddress)
             }
             
             if currentInterface.ifa_next != nil {
-                currentInterface = currentInterface.ifa_next.memory
+                #if swift(>=3.0)
+                    currentInterface = currentInterface.ifa_next.pointee
+                #else
+                    currentInterface = currentInterface.ifa_next.memory
+                #endif
             }
             else {
                 currentInterface = nil
