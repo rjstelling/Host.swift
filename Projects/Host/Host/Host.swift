@@ -49,13 +49,13 @@ final public class Host {
     
     private func getHostname() -> String? {
         
-        var hostname = [CChar](count: Int(NI_MAXHOST), repeatedValue: 0x0)
+        var hostname = [CChar](repeating: 0x0 ,count: Int(NI_MAXHOST))
         
         guard gethostname(&hostname, Int(NI_MAXHOST)) == noErr else {
             return nil
         }
         
-        return String(CString: hostname, encoding: NSUTF8StringEncoding)
+        return String(cString: hostname, encoding: NSUTF8StringEncoding)
     }
     
     private func getAddresses() -> [String] {
@@ -69,18 +69,18 @@ final public class Host {
         }
         
         // Our first address was returned above
-        var currentInterface: ifaddrs! = interfaces.memory
+        var currentInterface: ifaddrs! = interfaces?.pointee
         
         repeat {
             
-            let addressInfo = unsafeBitCast(currentInterface.ifa_addr.memory, sockaddr_in.self)
+            let addressInfo = unsafeBitCast(currentInterface.ifa_addr.pointee, to: sockaddr_in.self)
             
-            if let ipAddress = String(CString: inet_ntoa(addressInfo.sin_addr), encoding: NSUTF8StringEncoding) where Int(addressInfo.sin_family) == Int(AF_INET) {
+            if let ipAddress = String(cString: inet_ntoa(addressInfo.sin_addr), encoding: NSUTF8StringEncoding) where Int(addressInfo.sin_family) == Int(AF_INET) {
                 addresses.append(ipAddress)
             }
             
             if currentInterface.ifa_next != nil {
-                currentInterface = currentInterface.ifa_next.memory
+                currentInterface = currentInterface.ifa_next.pointee
             }
             else {
                 currentInterface = nil
