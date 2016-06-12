@@ -30,6 +30,7 @@ import Foundation
 // TODO:    - IPv6 Support
 //          - WAN Address
 
+/// This is much simplier than changing eery call site.
 #if !swift(>=3.0)
 extension String {
     public init?(cString: UnsafePointer<CChar>, encoding enc: NSStringEncoding) {
