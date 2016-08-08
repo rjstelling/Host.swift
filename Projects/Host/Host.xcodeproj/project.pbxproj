@@ -158,9 +158,9 @@
 			productReference = 2AB7ACD01D5352EF00A5F64A /* Host.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2AE806651CFDDE3200FDDB2F /* Host */ = {
+		2AE806651CFDDE3200FDDB2F /* Host iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AE8067A1CFDDE3200FDDB2F /* Build configuration list for PBXNativeTarget "Host" */;
+			buildConfigurationList = 2AE8067A1CFDDE3200FDDB2F /* Build configuration list for PBXNativeTarget "Host iOS" */;
 			buildPhases = (
 				2AE806611CFDDE3200FDDB2F /* Sources */,
 				2AE806621CFDDE3200FDDB2F /* Frameworks */,
@@ -171,7 +171,7 @@
 			);
 			dependencies = (
 			);
-			name = Host;
+			name = "Host iOS";
 			productName = Host;
 			productReference = 2AE806661CFDDE3200FDDB2F /* Host.framework */;
 			productType = "com.apple.product-type.framework";
@@ -227,7 +227,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2AE806651CFDDE3200FDDB2F /* Host */,
+				2AE806651CFDDE3200FDDB2F /* Host iOS */,
 				2AB7ACCF1D5352EF00A5F64A /* Host macOS */,
 				2AE8066F1CFDDE3200FDDB2F /* HostTests */,
 			);
@@ -288,7 +288,7 @@
 /* Begin PBXTargetDependency section */
 		2AE806731CFDDE3200FDDB2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2AE806651CFDDE3200FDDB2F /* Host */;
+			target = 2AE806651CFDDE3200FDDB2F /* Host iOS */;
 			targetProxy = 2AE806721CFDDE3200FDDB2F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -311,7 +311,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.empiricalmagic.Host-macOS";
-				PRODUCT_NAME = Host;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -334,7 +333,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.empiricalmagic.Host-macOS";
-				PRODUCT_NAME = Host;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -383,6 +381,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Host;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
@@ -428,6 +427,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Host;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 2.3;
@@ -454,7 +454,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.Host;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -478,7 +477,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.Host;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 2.3;
@@ -517,6 +515,7 @@
 				2AB7ACD61D5352EF00A5F64A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AE806601CFDDE3200FDDB2F /* Build configuration list for PBXProject "Host" */ = {
 			isa = XCConfigurationList;
@@ -527,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AE8067A1CFDDE3200FDDB2F /* Build configuration list for PBXNativeTarget "Host" */ = {
+		2AE8067A1CFDDE3200FDDB2F /* Build configuration list for PBXNativeTarget "Host iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AE8067B1CFDDE3200FDDB2F /* Debug */,
