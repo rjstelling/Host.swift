@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2AB7ACCF1D5352EF00A5F64A"
-               BuildableName = "Host macOS.framework"
+               BuildableName = "Host.framework"
                BlueprintName = "Host macOS"
                ReferencedContainer = "container:Host.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2AB7ACCF1D5352EF00A5F64A"
-            BuildableName = "Host macOS.framework"
+            BuildableName = "Host.framework"
             BlueprintName = "Host macOS"
             ReferencedContainer = "container:Host.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2AB7ACCF1D5352EF00A5F64A"
-            BuildableName = "Host macOS.framework"
+            BuildableName = "Host.framework"
             BlueprintName = "Host macOS"
             ReferencedContainer = "container:Host.xcodeproj">
          </BuildableReference>

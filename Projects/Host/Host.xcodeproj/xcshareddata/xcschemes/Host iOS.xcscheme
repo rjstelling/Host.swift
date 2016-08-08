@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2AE806651CFDDE3200FDDB2F"
-               BuildableName = "Host.framework"
-               BlueprintName = "Host"
+               BuildableName = "Host iOS.framework"
+               BlueprintName = "Host iOS"
                ReferencedContainer = "container:Host.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2AE806651CFDDE3200FDDB2F"
-            BuildableName = "Host.framework"
-            BlueprintName = "Host"
+            BuildableName = "Host iOS.framework"
+            BlueprintName = "Host iOS"
             ReferencedContainer = "container:Host.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,8 +65,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2AE806651CFDDE3200FDDB2F"
-            BuildableName = "Host.framework"
-            BlueprintName = "Host"
+            BuildableName = "Host iOS.framework"
+            BlueprintName = "Host iOS"
             ReferencedContainer = "container:Host.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,8 +83,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2AE806651CFDDE3200FDDB2F"
-            BuildableName = "Host.framework"
-            BlueprintName = "Host"
+            BuildableName = "Host iOS.framework"
+            BlueprintName = "Host iOS"
             ReferencedContainer = "container:Host.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
