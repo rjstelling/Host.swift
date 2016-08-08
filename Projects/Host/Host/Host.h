@@ -6,7 +6,7 @@
 //  Copyright © 2016 Richard Stelling. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Host.
 FOUNDATION_EXPORT double HostVersionNumber;
