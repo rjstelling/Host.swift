@@ -8,3 +8,4 @@
 
 MODULEMAP_FILE[sdk=iphoneos*] = $(PROJECT_DIR)/Maps/custom-phoneos.modulemap
 MODULEMAP_FILE[sdk=iphonesimulator*] = $(PROJECT_DIR)/Maps/custom-simulator.modulemap
+MODULEMAP_FILE[sdk=macosx*] = $(PROJECT_DIR)/Maps/custom-mac.modulemap
