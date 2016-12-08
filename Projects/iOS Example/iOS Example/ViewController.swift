@@ -11,10 +11,11 @@ import Host
 
 class ViewController: UIViewController {
 
-    let host = Host()
-    
     @IBOutlet weak var hostname: UILabel!
     @IBOutlet weak var addresses: UILabel!
+    @IBOutlet weak var ssid: UILabel!
+    
+    let host = Host()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
         addresses.text = host.addresses.reduce("") {
             return "\($0!)\($1)\n"
         }
+        ssid.text = host.ssid
     }
 
     override func didReceiveMemoryWarning() {

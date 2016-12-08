@@ -26,6 +26,7 @@
 //  SOFTWARE.
 
 import Foundation
+import SystemConfiguration.CaptiveNetwork //SSID
 
 // TODO:    - IPv6 Support
 //          - WAN Address
@@ -37,10 +38,40 @@ extension String {
         self.init(CString: cString, encoding: enc)
     }
 }
+
+    extension CFArray {
+        
+        func cast() -> [String]? {
+
+            guard let cast0 = self as? [AnyObject] else {
+                return nil
+            }
+            
+            return cast0 as? [String]
+        }
+    }
+    
+    extension CFDictionary {
+        
+        func cast() -> [String:AnyObject]? {
+            
+            guard let cast0 = self as? AnyObject else {
+                return nil
+            }
+            
+            return cast0 as? [String:AnyObject]
+        }
+    }
+
 #endif
 
 @available(iOS 9.3, OSX 10.11, *)
 final public class Host {
+    
+    /// Connected SSID if available
+    public var ssid: String? {
+        return getSSID()
+    }
     
     /// Host name if available
     public var name: String? {
@@ -52,8 +83,23 @@ final public class Host {
         return getAddresses()
     }
     
-    public init() {
+    public init() {}
+    
+    private func getSSID() -> String? {
+
+        guard let interfaces: [String] = CNCopySupportedInterfaces()?.cast() else {
+            return nil
+        }
         
+        for intf in interfaces {
+            
+            if let interface = CNCopyCurrentNetworkInfo(intf as CFString)?.cast() {
+                
+                return interface["SSID"] as? String
+            }
+        }
+        
+        return nil
     }
     
     private func getHostname() -> String? {
