@@ -1,3 +1,7 @@
+#Host.swift is no longer maintained
+
+Please use Hostess.swift: https://github.com/rjstelling/Hostess.swift 
+
 [![Host.swift](https://github.com/rjstelling/Host.swift/blob/master/Resources/Hero.png)](#)
 
 [![Swift](https://img.shields.io/badge/Swift-2.2-orange.svg?style=flat)](#)
