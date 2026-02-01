@@ -28,3 +28,7 @@ let host = Host()
 let deviceIP = host.addresses.first
 print("IP: \(deviceIP)") // Will print a dot-separated IP address, e.g: 17.24.2.55
 ```
+
+---
+
+[Contact](https://agent-mailbox.richardstelling.com/#contact)
